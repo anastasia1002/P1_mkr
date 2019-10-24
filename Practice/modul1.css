@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    font-size: 12px;
+    font-family: Roboto; 
+    font-weight: 500;  
+    height: 12px;
+    margin-top: 24px;
+    margin-left: 22px;
+    padding-left: 38px;  
+    padding-bottom: 24px;
+    display: block;
+    position: relative;   
+    cursor: pointer;
+    border-bottom: 1px solid #DEDEDE;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+ 
+  .container:last-child {
+      border: none;
+  }
+
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  
+  .checkmark {
+    position: absolute;
+    top: -6px;
+    left: 0;
+    height: 23px;
+    width: 23px; 
+    background-color: #FFFFFF;
+    border: 1px solid #DFDFDF;
+    border-radius: 50%;
+  }
+  
+ 
+  .container:hover input ~ .checkmark {
+    background-color:blue;
+  }
+   
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+
+  .container .checkmark:after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #5F86ED;
+  }
+  .First {
+    position: absolute;
+    right: 40px;
+    bottom:0;
+    font-size: 50px;
+    font-weight:bolder;
+    top:450px ;
+    text-align: right;
+    color: grey;
+    font-size: 20px;
+    top:10px;
+    right: 800px;
+   
+  }
+  .img1 img{
+      position: absolute;
+      bottom:800px;
+      width: 50px;
+      right: 700px;
+  }
+  form{
+      position: absolute;
+      bottom: 0;
+  }
+  .second {
+      position: absolute;
+      bottom: 0;
+      right: 500px;
+      top: 100px;
+  }
+  .price{
+      position: absolute;
+      right: 400px;
+      bottom: 800px;
+  }
+  .text1{
+      position: absolute;
+      right: 700px;
+      bottom:700px ;
+      font-family: 'Times New Roman', Times, serif;
+
+  }
+  .text2{
+      position: absolute;
+      right: 700px;
+      bottom:670px ;
+      font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  .cont{
+      position: absolute;
+      bottom:500px;
+  }
+  .text3{
+      position: absolute;
+      bottom: 700px;
+      font-size: 30px;
+  }
+  .text4{
+      position: absolute;
+      bottom: 400px;
+      font-size: 30px;
+  }
+  .name2{
+      position: absolute;
+      bottom: 600px;
+  }
